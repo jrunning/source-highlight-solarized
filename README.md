@@ -4,18 +4,20 @@ source-highlight-solarized
 **NOTE:** This is seriously a work in progress. It's not done. If you want it
 to get done, please contribute!
 
-A set of Solarized .style and .outlang files for [GNU Source-highlight][1]. I
+A set of [Solarized][1] .style and .outlang files for [GNU Source-highlight][1]. I
 made this parimarily for pretty source highlighting when using [less][2]. See
-below for less-specific instructions
+below for less-specific instructions.
 
-[1]: http://www.gnu.org/software/src-highlite/
-[2]: http://en.wikipedia.org/wiki/Less_(Unix)
+[1]: http://ethanschoonover.com/solarized
+[2]: http://www.gnu.org/software/src-highlite/
+[3]: http://en.wikipedia.org/wiki/Less_(Unix)
+
 
 Installation
 ------------
 1.  Install Source-highlight using your preferred method (build it yourself
     [according to the manual][3] or use a package manager, e.g. `apt-get
-    install source-highlight` or `brew install source-highlight`)
+    install source-highlight` or `brew install source-highlight`).
 
 2.  Run `source-highlight-settings`. This will tell you where your *datadir* is
     and give you a chance to change it (you won't need to, but note the path).
@@ -30,7 +32,8 @@ Installation
         `esc.style` and `esc-solarized.outlang` over `esc.lang` (or remove the
         original files and symlink the solarized files).
 
-[3]: http://www.gnu.org/software/src-highlite/source-highlight.html#Installation
+[4]: http://www.gnu.org/software/src-highlite/source-highlight.html#Installation
+
 
 Using with less
 ---------------
@@ -45,6 +48,9 @@ Or, if you overwrote/removed the original `*.style` and `*.outlang` files:
     export LESSOPEN="| source-highlight -f esc -i %s -o STDOUT"
     export LESS=" -R "
 
+Now use less as usual and supported files will be highlighted.
+
+
 Extras
 ------
 Look in `extras/` for an updated `ruby.lang` file, because Source-highlight's
@@ -58,7 +64,7 @@ I'm a noob with Source-highlight. Any help would be appreciated. See the
 [Source-highlight docs][4] for information on its lang, outlang, and
 style syntaxes.
 
-[4]: http://www.gnu.org/software/src-highlite/source-highlight.html
+[5]: http://www.gnu.org/software/src-highlite/source-highlight.html
 
 
 TODO
@@ -69,4 +75,4 @@ TODO
 * Implement other `*.outlang` files.
 * Make it as pretty as [vim-colors-solarized][5] in as many cases as possible.
 
-[5]: https://github.com/altercation/vim-colors-solarized
+[6]: https://github.com/altercation/vim-colors-solarized
