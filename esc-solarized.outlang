@@ -3,6 +3,7 @@ extension "txt"
 styletemplate "[38;05;$stylem$text"
 styleseparator ";"
 
+# TODO: Make these work
 bold "01$style"
 underline "04$style"
 italics "$style"
