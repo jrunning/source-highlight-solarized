@@ -34,6 +34,12 @@ Installation
       `esc.style` and `esc-solarized.outlang` over `esc.lang` (or move the
       original files and symlink the solarized files).
 
+ 4. Append a mapping for the new outfile in `datadir/outlang.map`:
+
+```bash
+$ echo "esc-solarized = esc-solarized.outlang" >> path/to/datadir/outlang.map
+````
+
 [4]: http://www.gnu.org/software/src-highlite/source-highlight.html#Installation
 
 
