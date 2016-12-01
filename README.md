@@ -25,7 +25,7 @@ Installation
     and give you a chance to change it (you won't need to, but note the path).
 
  3. You have two options now:
-   1. Copy (or symlink) the `*-solarized.style` and `*-solarized.outfile`
+   1. Copy (or symlink) the `*-solarized.style` and `*-solarized.outlang`
       files to *datadir* and invoke them manually with Source-highlight's `-f`
       and `--style-file` options (a good option if you're only going to use
       Source-highlight with `less`).
