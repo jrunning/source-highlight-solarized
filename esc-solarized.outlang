@@ -1,13 +1,12 @@
 extension "txt"
 
-styletemplate "[38;05;$stylem$text"
+styletemplate "\x1b[$stylem$text\x1b[m"
 styleseparator ";"
 
-# TODO: Make these work
 bold "01$style"
 underline "04$style"
-italics "$style"
-color "$style"
+italics "03$style"
+color "38;05;$style"
 
 colormap
 "yellow" "136"
